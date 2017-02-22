@@ -25,3 +25,13 @@ body {
 .success-active{
    color:#9d9d9d !important;
 }
+
+.center-content{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.top-position{
+    margin-top: 10%;
+}

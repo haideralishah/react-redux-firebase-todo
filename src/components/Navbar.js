@@ -17,7 +17,7 @@ class Navbar extends Component {
                             <li><a href="#">Page 2</a></li>*/}
                         </ul>
                         <ul className="nav navbar-nav navbar-right">
-                            <li><Link to="/home" activeClassName="success-active"><span className="glyphicon glyphicon-log-in success-link"> Sign Up </span></Link></li>
+                            <li><Link to="/signup" activeClassName="success-active"><span className="glyphicon glyphicon-log-in success-link"> Sign Up </span></Link></li>
                             <li><Link to="/login" activeClassName="success-active"><span className="glyphicon glyphicon-log-in success-link"> Login </span></Link></li>
                         </ul>
 
