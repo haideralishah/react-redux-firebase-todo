@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.success-background{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.success-link{
+    color:#ffffff !important;
+}
+
+.success-link:hover{
+     color:#9d9d9d !important;
+}
+
+.brand-link{
+     color:#ffffff !important;
+}
+
+.success-active{
+   color:#9d9d9d !important;
+}
