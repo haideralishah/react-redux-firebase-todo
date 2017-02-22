@@ -4,7 +4,10 @@ import Form from './Form.js';
 class Signup extends Component {
     render() {
         return (
-            <Form>hello Home</Form>
+            <div>
+                <h2 className='heading-2'>Signup</h2>
+                <Form>hello Home</Form>
+            </div>
         );
     }
 }
