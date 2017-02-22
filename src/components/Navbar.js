@@ -12,9 +12,6 @@ class Navbar extends Component {
                             <a className="navbar-brand brand-link">ReduxFire-Todo</a>
                         </div>
                         <ul className="nav navbar-nav">
-                            {/*<li className="active"><a href="#">Home</a></li>
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>*/}
                         </ul>
                         <ul className="nav navbar-nav navbar-right">
                             <li><Link to="/signup" activeClassName="success-active"><span className="glyphicon glyphicon-log-in success-link"> Sign Up </span></Link></li>
