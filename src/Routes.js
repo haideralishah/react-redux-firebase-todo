@@ -23,8 +23,9 @@ module.exports = (
         <Route path="/" component={Navbar} >
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
+            <Route path="/home" component={Home} />
         </Route>
-        <Route path="/home" component={Home} />
+
     </Router>
 )
 
