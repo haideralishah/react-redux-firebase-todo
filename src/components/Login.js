@@ -19,18 +19,10 @@ class Login extends Component {
   }
 
   login(credentials) {
-    console.log(credentials);
-
     firebase.auth().signInWithEmailAndPassword(credentials.email, credentials.password)
       .then((user) => {
-        console.log(user, 'user');
-        console.log(user, 'user');
-        this.props.authentication()
-        browserHistory.push('/signup');
-
-
-        // this.props.router.push('/signup');
-        //  console.log(user, 'user');
+        this.props.authentication();
+        browserHistory.push('/home');
       })
       .catch(function (error) {
         // Handle Errors here.
@@ -41,9 +33,6 @@ class Login extends Component {
   }
 
   render() {
-
-
-
     return (
       <div>
         <h2 className='heading-2'>Login</h2>
