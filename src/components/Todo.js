@@ -26,9 +26,18 @@ class Todo extends Component {
         firebase.database().ref('todos/' + currentUser.uid).on('child_changed', (data) => {
             let obj = data.val();
             obj.id = data.key;
-            let currentTodos = this.props.todos;
-            currentTodos = currentTodos.concat(obj)
-            this.props.addTodos(currentTodos);
+            let currentTods = this.props.todos;
+            // currentTodos = currentTodos.concat(obj)
+            let indexRemove;
+            for (var i = 0; i < currentTods.length; i++) {
+                if (currentTods[i].id === obj.id) {
+                    indexRemove = i;
+                }
+            }
+            currentTods = currentTods.slice(0, indexRemove).concat(obj).concat(currentTods.slice(indexRemove + 1));
+
+
+            this.props.addTodos(currentTods);
         })
 
     }

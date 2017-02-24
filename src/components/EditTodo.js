@@ -15,8 +15,15 @@ class EditTodo extends Component {
             editTodo
         } = this.props
     }
-    saveEditedTodo() {
+    saveEditedTodo(ev) {
+        ev.preventDefault();
         console.log(this.refs.editedTodo.value);
+        let currentUser = firebase.auth().currentUser;
+        firebase.database().ref('todos/' + currentUser.uid + '/' + this.props.editTodo.id).set({
+            todo: this.refs.editedTodo.value
+        });
+        this.props.toggleEdit({});
+
     }
     render() {
         return (
